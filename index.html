@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proses Banyak File TXT ke VCF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Proses Banyak File TXT ke VCF</h1>
+        <form id="txtForm">
+            <label for="txtFiles">Pilih File:</label>
+            <input type="file" id="txtFiles" name="txtFiles" multiple accept=".txt">
+            
+            <label for="contactName">Masukkan Nama Kontak (misal "Kontak"):</label>
+            <input type="text" id="contactName" placeholder="Nama Kontak Dasar">
+            
+            <label for="searchLabel">Label Pencarian (opsional):</label>
+            <input type="text" id="searchLabel" placeholder="Masukkan label pencarian">
+
+            <label for="vcfName">Nama File VCF (opsional):</label>
+            <input type="text" id="vcfName" placeholder="Nama file VCF">
+
+            <button type="button" onclick="processFiles()">Proses File</button>
+        </form>
+
+        <div id="outputContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
